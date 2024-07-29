@@ -1,0 +1,36 @@
+.f-info {
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials {
+    margin-bottom: 1rem;
+}
+
+.f-info-socials i {
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+.f-info-links {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.f-info-links a {
+    margin: 10px;
+    margin-bottom: 8px;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
