@@ -58,11 +58,24 @@ app.get("/donation/new", (req, res) => {
     res.render("makeDonation.ejs");
 });
 
-app.post("/listings",validateDonation, wrapAsync(async (req, res) => {
+app.post("/listings", validateDonation, wrapAsync(async (req, res) => {
     const newDonator = new Donation(req.body.Donation);
     await newDonator.save();
     res.redirect("/listings");
 }));
+
+//Our work in detail
+app.get("/listings/show1", (req, res) => {
+    res.render("show1.ejs");
+});
+
+app.get("/listings/show2", (req, res) => {
+    res.render("show2.ejs");
+});
+
+app.get("/listings/show3", (req, res) => {
+    res.render("show3.ejs");
+});
 
 //Page Error
 app.all("*", (req, res, next) => {
