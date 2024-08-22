@@ -35,7 +35,7 @@ function wrapAsync(fn) {
 //Validate Function
 const validateDonation = (req, res, next) => {
     let { error } = donationSchema.validate(req.body);
-    if (!error) {
+    if (error) {
         let errMsg = error.details.map((el) => el.message).join(",");
         throw new (ExpressError(400, errMsg));
     } else {
@@ -44,7 +44,7 @@ const validateDonation = (req, res, next) => {
 }
 //All Routes
 app.get("/", (req, res) => {
-    res.send("I am root");
+    res.redirect("/listings");
 });
 
 //Index Route

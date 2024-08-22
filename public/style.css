@@ -71,7 +71,7 @@ body {
     gap: 2rem;
 }
 
-.card {
+.box1 {
     background-color: #e1f5fe;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -81,7 +81,7 @@ body {
     border: 2px solid #4fc3f7;
 }
 
-.card:hover {
+.box1:hover {
     transform: scale(1.05);
     background-color: #b3e5fc;
 }
